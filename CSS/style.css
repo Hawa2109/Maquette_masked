@@ -101,7 +101,7 @@ header {
       background-size: cover;
       background-size: 200% 200%;
       -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
+      background-clip: text;
       animation: slide 35s infinite linear;
       cursor: pointer;
     }
