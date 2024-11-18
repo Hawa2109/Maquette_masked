@@ -32,31 +32,30 @@ header {
       list-style-type: none;
       /* padding: 10px; */
     }
-/* hover de la ul */
+    /* hover de la ul */
     li a {
       position: relative;
       display: inline-block;
       text-decoration: none;
       color: #fff;
-      font-size: 20px;     
+      font-size: 20px;
     }
-  li a::after {
+    li a::after {
       content: "";
       position: absolute;
-      bottom: 0; 
+      bottom: 0;
       left: 100%;
-      right: 100%; 
-      width: 0; 
-      height: 3px; 
-      background-color: orange; 
-      transition: all 0.3s ease; 
-  }
+      right: 100%;
+      width: 0;
+      height: 3px;
+      background-color: orange;
+      transition: all 0.3s ease;
+    }
 
-li a:hover::after {
-  left: 10%; 
-  width: 100%;
-}
-
+    li a:hover::after {
+      left: 10%;
+      width: 100%;
+    }
   }
   .titre {
     display: flex;
@@ -80,11 +79,12 @@ li a:hover::after {
       letter-spacing: 10px;
       -webkit-text-stroke: 1px;
       background: url(../images/pattern.png);
+      background-position: 0% 100%;
       background-repeat: no-repeat;
       background-size: cover;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      animation: slide 1s infinite linear;
+      animation: slide 1.9s linear alternate infinite;
       cursor: pointer;
     }
   }
@@ -92,7 +92,6 @@ li a:hover::after {
     color: #fff;
     font-size: 1em;
     text-transform: uppercase;
-    
   }
   .row {
     display: flex;
@@ -111,14 +110,13 @@ li a:hover::after {
       &:hover {
         background-color: #fff;
         color: #333;
-
       }
     }
 
     .text_icones {
-  display: flex;
-  justify-content: space-between;
-}
+      display: flex;
+      justify-content: space-between;
+    }
 
     .text {
       color: #fff;
@@ -126,19 +124,17 @@ li a:hover::after {
       width: 50%;
       margin: 5px;
     }
-
-    
   }
 }
 
 @keyframes slide {
   from {
-    background-position: 0% 50%;
+    background-position: 0 0;
   }
   to {
-    background-position: 20% 100%;
+    background-position: -70% 100%;
   }
-} 
+}
 
 header h1 span::before {
   position: absolute;
@@ -146,7 +142,3 @@ header h1 span::before {
   left: 0;
   z-index: -1;
 }
-
-
-
-
