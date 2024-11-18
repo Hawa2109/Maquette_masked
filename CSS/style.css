@@ -45,15 +45,15 @@ header {
       position: absolute;
       bottom: 0;
       left: 100%;
-      right: 100%;
+      /* right: 100%; */
       width: 0;
       height: 3px;
       background-color: orange;
-      transition: all 0.3s ease;
+      transition: all 0.4s ease-in-out;
     }
 
     li a:hover::after {
-      left: 10%;
+      left: 8%;
       width: 100%;
     }
   }
@@ -76,15 +76,13 @@ header {
       display: inline-block;
       font-size: 75px;
       text-transform: uppercase;
-      letter-spacing: 10px;
       -webkit-text-stroke: 1px;
       background: url(../images/pattern.png);
-      background-position: 0% 100%;
       background-repeat: no-repeat;
       background-size: cover;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      animation: slide 1.9s linear alternate infinite;
+      animation: slide 3s linear 2s alternate infinite;
       cursor: pointer;
     }
   }
@@ -132,7 +130,7 @@ header {
     background-position: 0 0;
   }
   to {
-    background-position: -70% 100%;
+    background-position: -25% 100%;
   }
 }
 
