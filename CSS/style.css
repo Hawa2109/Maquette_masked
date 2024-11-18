@@ -96,6 +96,7 @@ header {
       text-transform: uppercase;
       font-weight: 900;
       letter-spacing: 10px;
+      -webkit-text-stroke: 1px;
       background: linear-gradient(rgba(253, 248, 248, 0.861), transparent),
         url(../images/pattern.png);
       background-size: cover;
