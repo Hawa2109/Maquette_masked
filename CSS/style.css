@@ -74,15 +74,16 @@ header {
 
     span {
       display: inline-block;
-      font-size: 75px;
+      font-size: 80px;
       text-transform: uppercase;
       -webkit-text-stroke: 1px;
       background: url(../images/pattern.png);
+      background-position: 100% 100%;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100%;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      animation: slide 3s linear 2s alternate infinite;
+      animation:3s ease-in-out infinite alternate both running slide ;
       cursor: pointer;
     }
   }
@@ -130,7 +131,7 @@ header {
     background-position: 0 0;
   }
   to {
-    background-position: -25% 100%;
+    background-position: 0% 100%;
   }
 }
 
